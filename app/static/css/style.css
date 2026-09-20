@@ -1,0 +1,164 @@
+/* ------------------ Generak Styles ------------------ */
+body {
+  font-family: "Inter", sans-serif;
+}
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+}
+/* ------------------ Debug JSON & Output ------------------ */
+#debug-json:empty {
+  display: none;
+}
+
+#debug-json {
+  display: none;
+  font-family: monospace;
+  font-size: 0.85rem;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  white-space: pre-wrap;
+  color: #6c757d;
+}
+
+#debug-json.visible {
+  display: block;
+}
+
+#out {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  white-space: pre-wrap;
+}
+
+#out.ok {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #d1fae5;
+  border-left: 4px solid #10b981;
+}
+
+#out.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fee2e2;
+  border-left: 4px solid #ef4444;
+}
+
+#out.warn {
+  background: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fef3c7;
+  border-left: 4px solid #f59e0b;
+}
+
+.out-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  flex-shrink: 0;
+  color: inherit;
+  opacity: 0.6;
+}
+.out-close:hover {
+  opacity: 1;
+}
+
+/* ------------------ CPM Results Table ------------------ */
+
+.cpm-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #dee2e6;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.cpm-table th,
+.cpm-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #dee2e6;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cpm-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #212529;
+}
+
+.cpm-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.cpm-mono {
+  font-family: "Fira Code", ui-monospace, Menlo, Consolas, monospace;
+}
+
+.cpm-row-critical {
+  background-color: #fff1f2 !important;
+}
+
+/* ------------------ Task Input Table ------------------ */
+
+#task-table-scroll {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#input-table {
+  font-size: 0.9rem;
+}
+
+#input-table thead th:first-child {
+  width: 15%;
+}
+#input-table thead .col-duration {
+  width: 12%;
+}
+#input-table thead .col-pert {
+  width: 11%;
+}
+#input-table thead th:last-child {
+  width: 5%;
+}
+
+/* ------------------ Badges ------------------ */
+
+.badge-critical {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}

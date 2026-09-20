@@ -1,0 +1,10 @@
+.git
+.github
+k8s
+kind
+app/tests
+**/__pycache__
+**/*.pyc
+requirements-dev.txt
+docker-compose.yml
+*.md

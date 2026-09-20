@@ -1,0 +1,7 @@
+# Test dependencies for the Playwright end-to-end tests (versions taken from the original project)
+-r requirements.txt
+pytest==8.4.2
+pytest-playwright==0.7.1
+playwright==1.55.0
+openpyxl==3.1.5
+jsonschema==4.25.1

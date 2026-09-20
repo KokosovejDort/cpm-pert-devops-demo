@@ -1,0 +1,7 @@
+services:
+  cpm-pert:
+    build: .
+    image: cpm-pert-demo:local
+    ports:
+      - "5000:5000"
+    restart: unless-stopped

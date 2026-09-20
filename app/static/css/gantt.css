@@ -1,0 +1,98 @@
+/* ── Container ──────────────────────────────────────────────────────────── */
+#gantt-panel {
+  overflow: visible !important;
+}
+#gantt {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  min-height: 300px;
+  overflow-anchor: none;
+}
+#gantt svg.gantt-svg {
+  max-width: none;
+  display: block;
+}
+
+/* ── Bars ───────────────────────────────────────────────────────────────── */
+.gantt-bar.crit   { fill: #dc2626; }
+.gantt-bar.noncrit { fill: #2563eb; }
+
+.gantt-float {
+  fill: #f1f5f9;
+  stroke: #cbd5e1;
+  stroke-width: 1.5;
+}
+
+.gantt-ghost {
+  fill: #94a3b8;
+  opacity: 0.45;
+}
+
+/* ── Resize handle ──────────────────────────────────────────────────────── */
+.gantt-handle {
+  fill: transparent;
+  cursor: ew-resize;
+}
+.gantt-handle:hover {
+  fill: rgba(30, 64, 175, 0.2);
+}
+
+/* ── Labels ─────────────────────────────────────────────────────────────── */
+.gantt-label {
+  fill: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+}
+.gantt-row-label {
+  fill: #374151;
+  font-size: 11px;
+  font-family: monospace;
+}
+.gantt-header-text {
+  fill: #64748b;
+  font-size: 10px;
+  font-family: monospace;
+}
+.gantt-header-unit {
+  fill: #94a3b8;
+  font-size: 9px;
+  font-family: monospace;
+}
+
+/* ── Grid ───────────────────────────────────────────────────────────────── */
+.gantt-grid-line {
+  stroke: #e2e8f0;
+  stroke-width: 1;
+}
+
+/* ── PERT warning banner ────────────────────────────────────────────────── */
+.gantt-pert-warning {
+  background: #fef9c3;
+  border: 1px solid #fde047;
+  color: #713f12;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.gantt-pert-warning-close {
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: #92400e;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+.gantt-pert-warning-close:hover {
+  color: #451a03;
+}
